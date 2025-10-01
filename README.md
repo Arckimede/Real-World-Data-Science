@@ -1,2 +1,42 @@
-# Real-World-Data-Science
-Intermediate Data Science
+# Level 2 Data Science Projects
+
+Welcome to my **Level 2 Data Science Projects** repository! This collection showcases **intermediate machine learning projects** that go beyond simple tutorial notebooks. Each project demonstrates real-world data handling, structured workflows and end-to-end machine learning pipelines.  
+
+---
+
+## 🚀 About This Repository
+
+At **Level 2**, the focus is on:
+
+- **Working with messy, real-world datasets** – not just clean Kaggle CSVs.  
+- **Structured project organization** – modular scripts for preprocessing, feature engineering, training and evaluation.  
+- **Robust modeling practices** – proper train/validation/test splits, handling imbalanced data, hyperparameter tuning.  
+- **Documentation & reproducibility** – clear README files, reproducible workflows and exploratory data analysis.  
+
+These projects are designed to show proficiency in **Python, pandas, scikit-learn** and common data science tools, preparing for **entry-level data science roles** or the transition to Level 3 ML engineering.
+
+---
+
+## 📂 Projects Included
+
+### 1. **Customer Churn Prediction**
+Predict which customers are likely to leave a telecom company using demographic, account and service usage data.  
+- Key skills: Data preprocessing, feature engineering, imbalanced classification 
+- [Project Folder](customer-churn/)  
+
+---
+
+## 🛠 Tools & Libraries Used
+
+- **Python** – core programming language  
+- **pandas, numpy** – data manipulation  
+- **scikit-learn** – modeling and evaluation  
+- **matplotlib, seaborn** – visualization  
+- **Jupyter Notebooks** – exploration and experimentation  
+
+---
+
+## 📌 How to Use This Repository
+
+1. Clone the repository:  
+git clone https://github.com/Arckimede/Real-World-Data-Science.git
