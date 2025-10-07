@@ -16,7 +16,7 @@ Telecom customer churn is a critical business problem. Losing a customer is ofte
 
 ## 🧪 Dataset
 
-We use the publicly available [Telco Customer Churn dataset]: https://www.kaggle.com/datasets/blastchar/telco-customer-churn
+We use the publicly available dataset: https://www.kaggle.com/datasets/blastchar/telco-customer-churn
 
 Key features include:
 - **Customer demographics:** gender, senior citizen status, dependents, etc.
