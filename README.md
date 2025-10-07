@@ -24,6 +24,11 @@ Predict which customers are likely to leave a telecom company using demographic,
 - Key skills: Data preprocessing, feature engineering, imbalanced classification 
 - [Project Folder](Telco-Customer-Churn/customer-churn/)  
 
+### 2. **Online Retail Analysis**  
+Analyze transactional data from an online retail store to uncover purchasing patterns, segment customers, and identify revenue opportunities.  
+- Key skills: Data cleaning, exploratory data analysis (EDA), customer segmentation, visualization  
+- [Project folder](OnlineRetail/data/)
+
 ---
 
 ## 🛠 Tools & Libraries Used
