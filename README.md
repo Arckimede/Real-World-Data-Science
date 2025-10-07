@@ -22,7 +22,7 @@ These projects are designed to show proficiency in **Python, pandas, scikit-lear
 ### 1. **Customer Churn Prediction**
 Predict which customers are likely to leave a telecom company using demographic, account and service usage data.  
 - Key skills: Data preprocessing, feature engineering, imbalanced classification 
-- [Project Folder](customer-churn/)  
+- [Project Folder](Telco-Customer-Churn/customer-churn/)  
 
 ---
 
