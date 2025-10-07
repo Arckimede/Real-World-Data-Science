@@ -1,6 +1,6 @@
 data:
-  raw_data_path: "customer-churn/data/raw/telcoCustomerChurn.csv"
-  processed_data_path: "customer-churn/data/processed/telcoCustomerChurnClean.csv"
+  raw_data_path: "Telco-Customer-Churn/customer-churn/data/raw/telcoCustomerChurn.csv"
+  processed_data_path: "Telco-Customer-Churn/customer-churn/data/processed/telcoCustomerChurnClean.csv"
 
 features:
   target: "Churn"
