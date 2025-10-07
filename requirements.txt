@@ -1,7 +1,0 @@
-Dependencies needed for this project:
--pandas
--numpy
--scikit-learn
--matplotlib
--seaborn
--joblib
