@@ -1,17 +1,13 @@
-# ===============================
-# 🛒 Online Retail Project Config
-# ===============================
-
 project:
   name: "Online Retail Analysis"
   author: "Arckimede"
   description: "EDA and customer segmentation using the UK Online Retail dataset."
 
 paths:
-  raw_data: "Real-World-Data-Science/OnlineRetail/data/raw/OnlineRetail.xlsx"
-  cleaned_data: "Real-World-Data-Science/OnlineRetail/data/processed/online_retail_cleaned.csv"
-  models: "Real-World-Data-Science/OnlineRetail/models/"
-  notebooks: "Real-World-Data-Science/OnlineRetail/notebooks/"
+  raw_data: "OnlineRetail/data/raw/OnlineRetail.xlsx"
+  cleaned_data: "OnlineRetail/data/processed/online_retail_cleaned.csv"
+  models: "OnlineRetail/models/"
+  notebooks: "OnlineRetail/notebooks/"
 
 data:
   date_column: "InvoiceDate"
