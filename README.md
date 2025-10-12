@@ -36,7 +36,7 @@ Analyze transactional data from an online retail store to uncover purchasing pat
 - **Python** – core programming language  
 - **pandas, numpy** – data manipulation  
 - **scikit-learn** – modeling and evaluation  
-- **matplotlib, seaborn** – visualization  
+- **matplotlib** – visualization  
 - **Jupyter Notebooks** – exploration and experimentation  
 
 ---
