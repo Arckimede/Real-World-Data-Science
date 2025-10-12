@@ -29,6 +29,13 @@ Analyze transactional data from an online retail store to uncover purchasing pat
 - Key skills: Data cleaning, exploratory data analysis (EDA), customer segmentation, visualization  
 - [Project folder](OnlineRetail/data/)
 
+### 3️. **OpenAQ Air Quality Prediction**
+Predict air pollutant concentration levels (e.g., PM2.5, PM10, O₃) across different countries using **OpenAQ’s global air quality dataset**.  
+This project goes beyond EDA to build a **full ML regression pipeline** — from raw data cleaning to model comparison and saving.
+
+- Key Skills: Feature engineering, regression modeling, scikit-learn pipelines, model evaluation  
+- [Project Folder](OpenAQ/data/)
+
 ---
 
 ## 🛠 Tools & Libraries Used
