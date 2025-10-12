@@ -18,3 +18,8 @@ data:
 preprocessing:
   remove_negative_quantities: true
   drop_missing_customers: true
+
+outputs:
+  rfm_data: "OnlineRetail/data/processed/customersRfm.csv"
+  monthly_revenue: "OnlineRetail/data/processed/monthlyRevenue.csv"
+  product_features: "OnlineRetail/data/processed/productFeatures.csv"
