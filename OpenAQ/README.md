@@ -20,4 +20,6 @@ It demonstrates an **end-to-end workflow**: from data ingestion and cleaning to 
 - Visualize model residuals and metric comparisons
 - Save the best-performing model for future use
 
+The dataset is available here: https://public.opendatasoft.com/explore/assets/openaq/
+
 ---
