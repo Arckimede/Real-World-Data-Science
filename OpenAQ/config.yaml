@@ -1,0 +1,65 @@
+project:
+  name: "OpenAQ Air Quality Prediction"
+  version: "1.0"
+  author: "Arckimede"
+  description: "Predicting air pollutant concentration using OpenAQ data and machine learning models."
+
+data:
+  raw_data_path: "OpenAQ/data/raw/openaq.csv"
+  processed_data_path: "OpenAQ/data/processed/openAQCleaned.csv"
+  feature_engineered_path: "OpenAQ/data/processed/openAQFeatureEngineered.csv"
+  target_variable: "value"
+  drop_columns:
+    - "source name"
+    - "country label"
+    - "location"
+  categorical_features:
+    - "pollutant"
+    - "unit"
+    - "country code"
+    - "season"
+    - "weekday"
+    - "is weekend"
+  numerical_features:
+    - "latitude"
+    - "longitude"
+    - "year"
+    - "month"
+    - "day"
+    - "hour"
+    - "weekday"
+    - "val lat"
+    - "val lon"
+
+preprocessing:
+  scaling: "StandardScaler"
+  encoding: "OneHotEncoder"
+  handle_unknown: "ignore"
+  handle_missing: "drop"
+  split_by_year:
+    train_year_max: 2023
+    test_year: 2024
+
+modeling:
+  models:
+    RandomForestRegressor:
+      n_estimators: 100
+      random_state: 42
+    Ridge:
+      alpha: 1.0
+      random_state: 42
+    SVR:
+      kernel: "linear"
+  evaluation_metrics:
+    - "r2_score"
+    - "mean_absolute_error"
+    - "mean_absolute_percentage_error"
+  save_best_model_to: "models/bestModel.pkl"
+
+visualization:
+  residual_plot: true
+  metric_comparison_plot: true
+
+reproducibility:
+  random_seed: 42
+  environment: "requirements.txt"
