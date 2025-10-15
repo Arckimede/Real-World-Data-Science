@@ -53,8 +53,7 @@ modeling:
   evaluation_metrics:
     - "r2_score"
     - "mean_absolute_error"
-    - "mean_absolute_percentage_error"
-  save_best_model_to: "models/bestModel.pkl"
+  save_best_model_to: "OpenAQ/models/bestModel.pkl"
 
 visualization:
   residual_plot: true
