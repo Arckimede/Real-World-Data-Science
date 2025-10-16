@@ -36,7 +36,7 @@ This project goes beyond EDA to build a **full ML regression pipeline** — from
 - Key Skills: Feature engineering, regression modeling, scikit-learn pipelines, model evaluation  
 - [Project Folder](OpenAQ/data/)
 
-### 4️⃣ Ames Housing Price Prediction
+### 4️. **Ames Housing Price Prediction**
 Predict the sale prices of residential properties in Ames, Iowa, using over 80 housing features.  
 This project demonstrates **an end-to-end regression workflow** — from data cleaning and feature engineering to EDA, model training, and evaluation.
 
