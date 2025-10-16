@@ -1,6 +1,6 @@
 # 🏠 Ames Housing Price Prediction
 
-📖 Project Overview  
+## 📖 Project Overview  
 This project predicts **house sale prices in Ames, Iowa** using the **Ames Housing dataset**, a modern alternative to the classic Boston Housing dataset.  
 It’s a full end-to-end data science workflow — from data cleaning and feature engineering to exploratory data analysis (EDA) and machine learning modeling.  
 
@@ -8,7 +8,7 @@ The dataset includes over 80 attributes describing residential properties, enabl
 
 ---
 
-🎯 Objectives  
+## 🎯 Objectives  
 - Clean and preprocess raw housing data (handle missing values, outliers, and irrelevant columns)  
 - Perform Exploratory Data Analysis (EDA) to identify trends and relationships with sale price  
 - Engineer new features to improve model accuracy  
@@ -16,7 +16,7 @@ The dataset includes over 80 attributes describing residential properties, enabl
 - Tune hyperparameters and compare performance metrics  
 - Visualize residuals and error metrics for model interpretability  
 
-📊 Methodology  
+## 📊 Methodology  
 
 ### 1. Data Cleaning  
 - Removed unnecessary columns (`Order`, `PID`)  
@@ -46,9 +46,9 @@ Training, hyperparameter tuning and evaluation are handled in `AmesHousing/src/a
 Performance is assessed using:
 - Mean Absolute Error (MAE)  
 - R² Score  
-- Mean Absolute Percentage Error (MAPE)  
+- Mean Absolute Percentage Error (MAPE)
 
-📂 Dataset  
+## 📂 Dataset  
 - **Name:** Ames Housing Dataset  
 - **Source:** [Kaggle - Ames Housing Data](https://www.kaggle.com/datasets/prevek18/ames-housing-dataset)  
 - **Description:** 2,930 observations and 82 features describing residential homes in Ames, Iowa.
