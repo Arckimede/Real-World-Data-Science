@@ -1,4 +1,4 @@
-🏠 Ames Housing Price Prediction
+# 🏠 Ames Housing Price Prediction
 
 📖 Project Overview  
 This project predicts **house sale prices in Ames, Iowa** using the **Ames Housing dataset**, a modern alternative to the classic Boston Housing dataset.  
