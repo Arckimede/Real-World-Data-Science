@@ -1,0 +1,123 @@
+# ============================================================
+# Ames Housing Price Prediction - Configuration File
+# ============================================================
+# This config centralizes paths, parameters and settings used
+# throughout the project for data cleaning, feature engineering
+# and machine learning model training.
+# ============================================================
+
+project:
+  name: "Ames Housing Price Prediction"
+  author: "Arckimede"
+  version: "1.0.0"
+  description: "End-to-end regression modeling on the Ames Housing dataset."
+
+# ------------------------
+# Data Paths
+# ------------------------
+data:
+  raw_path: "AmesHousing/data/raw/AmesHousing.csv"
+  cleaned_path: "AmesHousing/data/processed/amesHousingCleaned.csv"
+  engineered_path: "AmesHousing/data/processed/amesHousingFeatureEngineering.csv"
+  target: "SalePrice"
+  drop_columns:
+    - "Order"
+    - "PID"
+  test_size: 0.2
+  random_state: 42
+
+# ------------------------
+# Feature Engineering
+# ------------------------
+features:
+  create_interaction_terms: true
+  derived_features:
+    # Temporal and Age-Based Features
+    - "House Age"          # Years since built
+    - "Remod Age"          # Years since last remodel
+
+    # Aggregated Features
+    - "Total Bathrooms"    # Total usable bathrooms (weighted full + half)
+    - "Total Porch SF"     # Combined outdoor living space
+
+    # Binary Indicator Features
+    - "Has Pool"           # 1 if property has a pool
+    - "Has Fireplace"      # 1 if property has at least one fireplace
+    - "Has Garage"         # 1 if property has a garage
+
+    # Interaction Features
+    - "Overall Qual Gr Liv"  # Overall quality × living area
+    - "Total Rooms Gr Liv"   # Total rooms × living area
+
+    # Temporal Bucket
+    - "Built Decade"         # Decade the house was built
+
+  numerical:
+    - "Overall Qual"
+    - "Gr Liv Area"
+    - "Garage Area"
+    - "Total Bsmt SF"
+    - "1st Flr SF"
+    - "Year Built"
+    - "Yr Sold"
+    - "Full Bath"
+    - "Half Bath"
+    - "Bsmt Full Bath"
+    - "Bsmt Half Bath"
+    - "TotRms AbvGrd"
+    - "House Age"
+    - "Remod Age"
+    - "Total Bathrooms"
+    - "Total Porch SF"
+    - "Overall Qual Gr Liv"
+    - "Total Rooms Gr Liv"
+
+  categorical_indicators:
+    - "Has Pool"
+    - "Has Fireplace"
+    - "Has Garage"
+
+  drop_after_engineering:
+    - "Order"
+    - "PID"
+
+# ------------------------
+# Modeling
+# ------------------------
+models:
+  linear_regression:
+    type: "LinearRegression"
+    normalize: false
+
+  ridge:
+    type: "RidgeCV"
+    alphas: [0.001, 0.01, 0.1, 1, 10, 100, 1000]
+
+  random_forest:
+    type: "RandomForestRegressor"
+    param_grid:
+      n_estimators: [100, 200, 500]
+      max_depth: [None, 10, 20]
+      min_samples_split: [2, 5, 10]
+      min_samples_leaf: [1, 2, 4]
+    cv_folds: 5
+
+# ------------------------
+# Evaluation
+# ------------------------
+evaluation:
+  metrics:
+    - "MAE"
+    - "R2"
+    - "MAPE"
+  plots:
+    residuals: true
+    metrics_barplot: true
+
+# ------------------------
+# Output Paths
+# ------------------------
+output:
+  model_dir: "AmesHousing/models/"
+  best_model_filename: "AmesHousing/bestModel.pkl"
+
