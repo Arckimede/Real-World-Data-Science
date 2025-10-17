@@ -120,4 +120,10 @@ evaluation:
 output:
   model_dir: "AmesHousing/models/"
   best_model_filename: "AmesHousing/bestModel.pkl"
-
+  figures_dir: "AmesHousing/figures/"
+  figure_files:
+    - "Count of Properties.png"
+    - "Gr. Liv. Area vs Sale Price by Year Built Animation.gif"
+    - "Gross Living Area Distribution.png"
+    - "Gross Living Area vs Sale Price.png"
+    - "Sale Price Outliers.png"
