@@ -127,3 +127,7 @@ output:
     - "Gross Living Area Distribution.png"
     - "Gross Living Area vs Sale Price.png"
     - "Sale Price Outliers.png"
+    - "Residual Plot Lin. Regression.png"
+    - "Residual Plot Random Forest.png"
+    - "Residual Plot Ridge Regression.png"
+    - "ML models' metrics.png"
