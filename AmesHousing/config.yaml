@@ -119,7 +119,7 @@ evaluation:
 # ------------------------
 output:
   model_dir: "AmesHousing/models/"
-  best_model_filename: "AmesHousing/bestModel.pkl"
+  best_model_filename: "AmesHousing/models/bestModel.pkl"
   figures_dir: "AmesHousing/figures/"
   figure_files:
     - "Count of Properties.png"
