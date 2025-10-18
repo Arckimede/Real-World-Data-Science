@@ -59,6 +59,22 @@ visualization:
   residual_plot: true
   metric_comparison_plot: true
 
+output:
+  model_dir: "OpenAQ/models/"
+  best_model_filename: "OpenAQ/models/bestModel.pkl"
+  figures_dir: "OpenAQ/figures/"
+  figure_files:
+    - "Average Pollution Level by Year.png"
+    - "Average pollution per country per year.gif"
+    - "Country-level Insights.png"
+    - "Geographic Distribution.png"
+    - "ML Metrics.png"
+    - "Pollutant Counts.png"
+    - "Residual Plot Random Forest.png"
+    - "Residual Plot Ridge Regression.png"
+    - "Residual Plot SVM.png"
+    - "Temporal Patterns.png"
+
 reproducibility:
   random_seed: 42
   environment: "requirements.txt"
